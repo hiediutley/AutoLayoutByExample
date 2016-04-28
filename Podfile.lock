@@ -1,0 +1,10 @@
+PODS:
+  - Parus (1.0)
+
+DEPENDENCIES:
+  - Parus
+
+SPEC CHECKSUMS:
+  Parus: e8eeec5e596e59fea3e3129775e5ddf2e5c0b4eb
+
+COCOAPODS: 0.39.0

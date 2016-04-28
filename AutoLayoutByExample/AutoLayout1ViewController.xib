@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoLayout1ViewController">
+            <connections>
+                <outlet property="greenView" destination="Uml-oJ-RJW" id="hDJ-Lw-eWF"/>
+                <outlet property="orangeView" destination="CG2-sB-gXG" id="C6c-Up-EnC"/>
+                <outlet property="redView" destination="OWN-qK-qOr" id="qwY-aP-i3f"/>
+                <outlet property="view" destination="s29-V3-EMI" id="hDA-Lu-K5J"/>
+                <outlet property="yellowView" destination="Cun-TK-cTZ" id="gVw-bj-LnB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="s29-V3-EMI">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CG2-sB-gXG" userLabel="Orange">
+                    <rect key="frame" x="35" y="181" width="250" height="75"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="IaY-fY-zJM"/>
+                        <constraint firstAttribute="width" constant="250" id="vs5-qs-r7a"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-TK-cTZ" userLabel="Yellow">
+                    <rect key="frame" x="35" y="307" width="250" height="75"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="5Ff-qd-7cP"/>
+                        <constraint firstAttribute="height" constant="75" id="Mif-gu-bMd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uml-oJ-RJW" userLabel="Green">
+                    <rect key="frame" x="35" y="430" width="250" height="75"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="gtq-va-LVV"/>
+                        <constraint firstAttribute="width" constant="250" id="oxQ-1K-NpV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWN-qK-qOr" userLabel="Red">
+                    <rect key="frame" x="35" y="55" width="250" height="75"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="AaU-ak-a77"/>
+                        <constraint firstAttribute="height" constant="75" id="iRB-OC-yJ7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CG2-sB-gXG" firstAttribute="top" secondItem="OWN-qK-qOr" secondAttribute="bottom" constant="51" id="Kgq-Vh-TzB"/>
+                <constraint firstItem="CG2-sB-gXG" firstAttribute="leading" secondItem="Cun-TK-cTZ" secondAttribute="leading" id="XEi-h5-mfa"/>
+                <constraint firstItem="Cun-TK-cTZ" firstAttribute="top" secondItem="CG2-sB-gXG" secondAttribute="bottom" constant="51" id="cHb-WJ-6NH"/>
+                <constraint firstItem="OWN-qK-qOr" firstAttribute="centerX" secondItem="s29-V3-EMI" secondAttribute="centerX" id="kVx-B6-gfm"/>
+                <constraint firstItem="OWN-qK-qOr" firstAttribute="top" secondItem="s29-V3-EMI" secondAttribute="top" constant="55" id="n7t-Uj-zMe"/>
+                <constraint firstItem="Cun-TK-cTZ" firstAttribute="leading" secondItem="Uml-oJ-RJW" secondAttribute="leading" id="re9-Bd-ewS"/>
+                <constraint firstItem="OWN-qK-qOr" firstAttribute="leading" secondItem="CG2-sB-gXG" secondAttribute="leading" id="s1A-DQ-1Xv"/>
+                <constraint firstItem="Uml-oJ-RJW" firstAttribute="top" secondItem="Cun-TK-cTZ" secondAttribute="bottom" constant="48" id="wRW-vh-Bdi"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="201" y="377"/>
+        </view>
+    </objects>
+</document>

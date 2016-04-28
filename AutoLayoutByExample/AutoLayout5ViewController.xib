@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoLayout5ViewController">
+            <connections>
+                <outlet property="greenView" destination="Fnu-hl-0T5" id="EgO-lz-vji"/>
+                <outlet property="orangeView" destination="tcf-t6-837" id="hPl-96-x2I"/>
+                <outlet property="redView" destination="mKT-Xr-DhQ" id="3Yw-oi-2zs"/>
+                <outlet property="view" destination="Z3W-lx-aSc" id="aoE-rv-3Th"/>
+                <outlet property="yellowView" destination="9O9-wN-ibi" id="5Lm-M5-FwK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Z3W-lx-aSc">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcf-t6-837" userLabel="Red">
+                    <rect key="frame" x="35" y="181" width="250" height="75"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="G9e-JO-ixO"/>
+                        <constraint firstAttribute="width" constant="250" id="wZJ-0W-mqD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9O9-wN-ibi" userLabel="Orange">
+                    <rect key="frame" x="35" y="307" width="250" height="75"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="lSu-nK-NKW"/>
+                        <constraint firstAttribute="height" constant="75" id="s9X-8r-b5M"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnu-hl-0T5" userLabel="Yellow">
+                    <rect key="frame" x="35" y="430" width="250" height="75"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="Cm7-XX-2p9"/>
+                        <constraint firstAttribute="height" constant="75" id="K3N-yj-cHN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKT-Xr-DhQ" userLabel="Green">
+                    <rect key="frame" x="35" y="55" width="250" height="75"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="574-LF-apC"/>
+                        <constraint firstAttribute="width" constant="250" id="jff-lt-VZN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mKT-Xr-DhQ" firstAttribute="top" secondItem="Z3W-lx-aSc" secondAttribute="top" constant="55" placeholder="YES" id="Bbq-nL-Jaq"/>
+                <constraint firstItem="tcf-t6-837" firstAttribute="top" secondItem="mKT-Xr-DhQ" secondAttribute="bottom" constant="51" placeholder="YES" id="MYi-hM-EWb"/>
+                <constraint firstItem="9O9-wN-ibi" firstAttribute="leading" secondItem="Fnu-hl-0T5" secondAttribute="leading" placeholder="YES" id="XMG-vt-pBb"/>
+                <constraint firstItem="Fnu-hl-0T5" firstAttribute="top" secondItem="9O9-wN-ibi" secondAttribute="bottom" constant="48" placeholder="YES" id="YJq-Uu-rB3"/>
+                <constraint firstItem="mKT-Xr-DhQ" firstAttribute="leading" secondItem="tcf-t6-837" secondAttribute="leading" placeholder="YES" id="ZZJ-M7-iu7"/>
+                <constraint firstItem="mKT-Xr-DhQ" firstAttribute="centerX" secondItem="Z3W-lx-aSc" secondAttribute="centerX" placeholder="YES" id="dC1-mF-EYN"/>
+                <constraint firstItem="9O9-wN-ibi" firstAttribute="top" secondItem="tcf-t6-837" secondAttribute="bottom" constant="51" placeholder="YES" id="eLB-jP-Avg"/>
+                <constraint firstItem="tcf-t6-837" firstAttribute="leading" secondItem="9O9-wN-ibi" secondAttribute="leading" placeholder="YES" id="j27-N0-Tbn"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="201" y="377"/>
+        </view>
+    </objects>
+</document>
